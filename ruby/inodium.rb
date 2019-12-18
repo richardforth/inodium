@@ -68,7 +68,7 @@ def list_one_deep(dir)
   fulldirs - [dir + ".", dir + ".."]
 end
 
-def slow_scan(dir, buffer)
+def scan(dir, buffer)
   puts "Scan started at #{Time.now}."
   @skipped = []
   arr = list_one_deep(dir)
@@ -129,7 +129,7 @@ title = "Top 20 Directories in #{fs} for inodes"
 puts title
 puts "=" * title.length
 puts
-slow_scan(fs, myTopTwenty)
+scan(fs, myTopTwenty)
 puts
 myTopTwenty.report.sort_by { |hsh| hsh[:count] }.reverse.each do |hash|
   string = "%-30d : %-70s" % [hash[:count], hash[:path]]
