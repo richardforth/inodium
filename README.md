@@ -3,7 +3,7 @@ The inode hunter
 
 # No.1 Tip
 
-First check /var/lib/php/session, if you try to ls that directory, the sssh session will probably hang because there are too many files in there, possibly dude to php garbage collection failing. If its not that, then you need "inodium", which is a concept at the moment, you can read all about it here.
+First check /var/lib/php/session, if you try to `ls` that directory, the ssh session will probably hang because there are too many files in there, possibly dude to php garbage collection failing. If its not that, then you need "inodium", which is a concept at the moment, you can read all about it here.
 
 # About
 
