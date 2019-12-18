@@ -40,6 +40,8 @@ Scan completed at 2019-12-18 22:43:11 +0000.
 Done.
 ```
 
+as it runs so fast, its's trivial to just re-run it on any directory youre interested in digging deeper into!
+
 
 # No.1 Tip
 
