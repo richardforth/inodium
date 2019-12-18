@@ -1,6 +1,46 @@
 # inodium
 The inode hunter
 
+# ruby example
+
+This was tested on Linux Subsystem for windows, so of cource C drive id mounted automatically as /mnt/c, as youd expect it come out on top. Usung file globbing this speeded the process up from hours, to just under 2 minutes.
+
+```
+$ sudo ruby inodium.rb /
+
+Top 20 Directories in / for inodes
+==================================
+
+Scan started at 2019-12-18 22:41:52 +0000.
+Scan completed at 2019-12-18 22:43:11 +0000.
+
+760141                         : /mnt
+31587                          : /usr
+3113                           : /var
+1407                           : /etc
+912                            : /lib
+663                            : /proc
+224                            : /sbin
+214                            : /dev
+190                            : /sys
+175                            : /bin
+25                             : /home
+14                             : /run
+8                              : /root
+5                              : /lib64
+4                              : /tmp
+4                              : /srv
+4                              : /snap
+4                              : /opt
+4                              : /media
+4                              : /boot
+
+
+
+Done.
+```
+
+
 # No.1 Tip
 
 First check `/var/lib/php/session`, if you try to `ls` that directory, the ssh session will probably hang because there are too many files in there, possibly due to php garbage collection failing. If its not that, then you need "inodium", which is a concept at the moment, you can read all about it here.
