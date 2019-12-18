@@ -67,7 +67,7 @@ So in our script, / becomes ARGV[0], the first argument.
      - it suffers a long delay on /var/lib/php, so again, it times itself out and resets ARGV[0] "scanroot"variable to /var/lib/php
      - it suffers a long delay on /var/lib/php/session, so again, it times itself out and resets ARGV[0] "scanroot"variable to /var/lib/php/session
       
-      NOTE: 4a is currently flawed though, because we are "self-limiting" to one path (otherwise known as "going down a rabit hole" and missing the bigger picture)
+      NOTE: 4a is currently flawed though, because we are "self-limiting" to one path (otherwise known as "going down a rabbit hole" and missing the bigger picture)
 
 4b.  Continue to rip through the remaining folders in the original "scanroot" and updating the circular buffer as needed
 
