@@ -7,6 +7,7 @@ print("This is a work in progress.\n")
 print("This is not yet for production use.\n")
 print("Refactoring of https://github.com/richardforth/inodium/blob/master/ruby/inodium.rb")
 
+# CircularBuffer inpired by code and adapted from: https://gist.github.com/manchicken/6238117
 # Class CircularBuffer
 {
   package CircularBuffer;
