@@ -18,7 +18,7 @@ require 'find'
 class CircularBuffer
 
   # initialize the object with a size
-  def initialize(size:)
+  def initialize(size)
     @max_size = size
     @buffer = []
   end
@@ -128,8 +128,8 @@ if ARGV.length != 1
 else
   fs = ARGV[0]
   # CHECK IF THE FOLDER IS A REAL EXISTING FOLDER, OR ABORT.
-  puts "FATAL: Not a valid folder," unless is_dir(fs)
-  exit unless is_dir(fs)
+  puts "FATAL: Not a valid folder," unless is_dir?(fs)
+  exit unless is_dir?(fs)
 end
 puts
 title = "Top 20 Directories in #{fs} for inodes"
