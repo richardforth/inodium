@@ -18,7 +18,7 @@ require 'find'
 class CircularBuffer
 
   # initialize the object with a size
-  def initialize(size)
+  def initialize(size:)
     @max_size = size
     @buffer = []
   end
